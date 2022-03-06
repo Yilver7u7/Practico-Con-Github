@@ -27,15 +27,23 @@ const areaTriangulo = (baseTriangulo*alturaTriangulo)/2;
 
 console.log(`Los lados del triángulo miden: ${ladoTriangulo1}cm, ${ladoTriangulo2}cm, ${baseTriangulo}cm`);
 console.log(`La altura del triángulo es: ${alturaTriangulo}cm`);
-console.log(`El perimetro del triángulo es: ${perimetroTriangulo}cm²`);
-console.log(`El área del triángulo es: ${areaTriangulo}cm`);
+console.log(`El perimetro del triángulo es: ${perimetroTriangulo}cm`);
+console.log(`El área del triángulo es: ${areaTriangulo}cm²`);
 
 console.groupEnd("Triángulos");
 
+console.group("Circulo");
+//Este es el código del Circulo
+const radioCirculo =4;
+const diametroCirculo = radioCirculo*2;
+const PI = Math.PI;
+const perimetroCirculo = diametroCirculo*PI;
+const areaCirculo = (radioCirculo*radioCirculo)*PI;
 
+console.log(`El radio del círculo es: ${radioCirculo}cm`);
+console.log(`El diametro del círculo es: ${diametroCirculo}cm`);
+console.log(`PI es igual a:${PI}`);
+console.log(`El perimetro del círculo es: ${perimetroCirculo}cm`);
+console.log(`El área del círculo es: ${areaCirculo}cm²`);
 
-
-
-
-
-
+console.groupEnd("Circulo");
