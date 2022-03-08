@@ -6,29 +6,27 @@ console.log("Hello world!");
 //A partir de ahora haremos que funcione la operacion
 console.group("Cuadrado");
 //Este es el código del cuadrado
-const ladoCuadrado = 5;
-const perimetroCuadrado = ladoCuadrado*4;
-const areaCuadrado = ladoCuadrado*ladoCuadrado;
-
-console.log(`Los lados del cuadrado miden: ${ladoCuadrado}cm`);
-console.log(`El perimetro del cuadrado es: ${perimetroCuadrado}cm`);
+function perimetroCuadrado(lado){
+    return lado*4
+};
+function areaCuadrado(lado){
+    return lado*lado
+};
+console.log(`El perimetro del cuadrado es: ${perimetroCuadrado()}cm`);
 console.log(`El área del cuadrado es: ${areaCuadrado}cm²`);
 
 console.groupEnd("Cuadrado"); 
 
 console.group("Triángulos");
 //Este es el código del Triangulo
-const ladoTriangulo1 = 7;
-const ladoTriangulo2 = 7;
-const baseTriangulo = 7;
-const alturaTriangulo = 5.5;
-const perimetroTriangulo = ladoTriangulo1+ladoTriangulo2+baseTriangulo;
-const areaTriangulo = (baseTriangulo*alturaTriangulo)/2;
+function perimetroTriangulo(lado1,lado2,base){
+    return `El perimetro del triángulo es: ${lado1+lado2+base}cm`
+};
 
-console.log(`Los lados del triángulo miden: ${ladoTriangulo1}cm, ${ladoTriangulo2}cm, ${baseTriangulo}cm`);
-console.log(`La altura del triángulo es: ${alturaTriangulo}cm`);
-console.log(`El perimetro del triángulo es: ${perimetroTriangulo}cm`);
-console.log(`El área del triángulo es: ${areaTriangulo}cm²`);
+
+function areaTriangulo(base,altura){
+    return `El área del triángulo es: ${(base*altura)/2}cm²`
+};
 
 console.groupEnd("Triángulos");
 
