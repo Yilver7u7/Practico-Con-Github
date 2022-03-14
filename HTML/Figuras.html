@@ -7,7 +7,24 @@
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1>Figuras geométricas| Curso Practico de Javascript</h1>
+    <header>    
+        <h1>Figuras geométricas| Curso Práctico de Javascript con Platzi</h1>
+        <p>Es es el primer Talle del curso Práctico</p>
+    </header>
+    <section>
+        <h2>Calcula el perimetro y el área de un cuadrado</h2>
+        <!-- Este es el formulario para el cuadrado -->
+        <form>
+        <label for="InputCuadrado">
+            <span>Escribe cuanto miden los lados del cuadrado</span>
+        </label id="InputCuadrado">
+            <input id="InputCuadrado" type="number">
+            <!-- Se les genera el atributo onclick, el cuál me permitirá generar una comunicación con una fuction que está en mi Js, para que ejecute lo deseado -->
+            <button type="button" onclick="calcularPerimetroCuadrado">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado">Calcular área</button>
+        </form>
+    </section>
+
     
     <script src="../Figuras.js"></script>
 </body>
