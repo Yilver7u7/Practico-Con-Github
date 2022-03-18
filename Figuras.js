@@ -84,23 +84,21 @@ function calcularPerimetroTriangle() {
     const Input2 = document.getElementById("InputTriangle_ladoB");
     const Input3 = document.getElementById("InputTriangle_Base");
     //valor
-    const lado1 = Input.value;
-    const lado2 = Input2.value;
-    const base = Input3.value;
-    console.log(lado1+lado2+base);
+    const lado1 = Number(Input.value);
+    const lado2 = Number(Input2.value);
+    const base = Number (Input3.value);
     //fuciones
-    const Respuesta = perimetroTriangulo(lado1,lado2,base);
-    console.log(Respuesta);
-    alert(Respuesta);
+    const Perimetro = perimetroTriangulo(lado1,lado2,base);
+    Resultado_erimetro_Triangle.innerHTML = Perimetro;
 };
 
 function calcularAreaTriangle(){
     const input = document.getElementById('InputTriangle_Base');
     const input2 = document.getElementById('InputTriangle_Altura');
+    //Value
     const Base = input.value;
     const Altura = input2.value;
     //funciones
     const Area = areaTriangulo(Base,Altura);
-    console.log(Area);
     Resultado_Area_Triangle.innerHTML = Area;
 };
