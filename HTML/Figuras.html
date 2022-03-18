@@ -11,20 +11,58 @@
         <h1>Figuras geométricas| Curso Práctico de Javascript con Platzi</h1>
         <p>Es es el primer Talle del curso Práctico</p>
     </header>
+<main>
+    <!-- Primera card cuadrado -->
     <section>
         <h2>Calcula el perimetro y el área de un cuadrado</h2>
         <!-- Este es el formulario para el cuadrado -->
-        <form>
-        <label for="InputCuadrado">
-            <span>Escribe cuanto miden los lados del cuadrado</span>
-        </label id="InputCuadrado">
-            <input id="InputCuadrado" type="number">
-            <!-- Se les genera el atributo onclick, el cuál me permitirá generar una comunicación con una fuction que está en mi Js, para que ejecute lo deseado -->
-            <button type="button" onclick="calcularPerimetroCuadrado">Calcular perimetro</button>
-            <button type="button" onclick="calcularAreaCuadrado">Calcular área</button>
+        <form action="">
+            <div class="figure cuadrado-form-label">
+                <label for="InputCuadrado">
+                    <span>Escribe cuanto miden los lados del cuadrado</span>
+                </label id="InputCuadrado">
+            </div>
+            <!-- Dentro encotraremos nuestra input para el cuadrado -->
+            <div class="Input-Cuadrado">
+                <input id="InputCuadrado" placeholder="Lado..." type="number">
+            </div>
+            <!-- Se les genera el botton que interactua con el Js -->
+            <div>
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
+            </div>
+            <!-- En lugar de un alert usaremos otro elemento que le pide al JS que le cambie el valor a un p, para que en este se pueda observar el resultado que el usuario. -->
+            <div>
+                <!-- Para generar lo que se había planteado usaremo el inner.HTML para decirle que nuestro parrafo será igual al resultado -->
+                <p id="resultado_Perimetro_Cuadrado"></p>
+                <p id="resultado_Area_Cuadrado"></p>
+            </div>
+        </form>
+    </section>
+    <!-- Segunda card circulo -->
+    <section>
+        <h2>Calcular el perimetro y el área de un circulo</h2>
+        <form action="">
+            <div class="Figure-circulo-form-label">
+                <label for="InputCirculo">
+                    <span>Escribe cuanto mide el radio del circulo</span>
+                </label>
+            </div>
+            <div class="Input-Circulo">
+                    <input type="number" id="InputCirculo" placeholder="Radio">
+            </div>
+            <div>
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perimetro</button>
+                <button type="button" onclick="calcularAreaCirculo()">Calcular el Área</button>
+            </div>
+            <div>
+                <p id="Resultado_Perimetro_Circulo"></p>
+                <p id="Resultado_Area_Circulo"></p>
+            </div>
         </form>
     </section>
 
+</main>
     
     <script src="../Figuras.js"></script>
 </body>
