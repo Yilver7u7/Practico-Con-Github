@@ -61,6 +61,31 @@
             </div>
         </form>
     </section>
+    <!-- Tercera Card -->
+    <section>
+        <h2>Calcular el Perimetro y el área de un Triángulo</h2>
+        <form action="">
+            <div class="Figure-Triangle-form-label">
+                <label for="InputTriangle_lado1">
+                    <span>Escribe cuanto miden los lados del Triángulo</span>
+                </label>
+            </div>
+            <div class="Input-Triangle">
+                <input type="number" placeholder="Lados" id="InputTriangle_ladoA">
+                <input type="number" placeholder="Lados" id="InputTriangle_ladoB">
+                <input type="number" placeholder="Base" id="InputTriangle_Base">
+                <input type="number" placeholder="Altura" id="InputTriangle_Altura">
+            </div>
+            <div>
+                <button type="button" onclick="calcularPerimetroTriangle()">Calcular el Perimetro</button>
+                <button type="button" onclick="calcularAreaTriangle()">Calcular el Área</button>
+            </div>
+            <!-- Respuesta Del Triangulo -->
+            <div>
+                <p id="Resultado_Area_Triangle"></p>
+            </div>
+        </form>
+    </section>
 
 </main>
     

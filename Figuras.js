@@ -78,3 +78,29 @@ function calcularAreaCirculo() {
     const respuestaA = areaCirculo(value);
     Resultado_Area_Circulo.innerHTML = respuestaA;
 };
+
+function calcularPerimetroTriangle() {
+    const Input = document.getElementById("InputTriangle_ladoA");
+    const Input2 = document.getElementById("InputTriangle_ladoB");
+    const Input3 = document.getElementById("InputTriangle_Base");
+    //valor
+    const lado1 = Input.value;
+    const lado2 = Input2.value;
+    const base = Input3.value;
+    console.log(lado1+lado2+base);
+    //fuciones
+    const Respuesta = perimetroTriangulo(lado1,lado2,base);
+    console.log(Respuesta);
+    alert(Respuesta);
+};
+
+function calcularAreaTriangle(){
+    const input = document.getElementById('InputTriangle_Base');
+    const input2 = document.getElementById('InputTriangle_Altura');
+    const Base = input.value;
+    const Altura = input2.value;
+    //funciones
+    const Area = areaTriangulo(Base,Altura);
+    console.log(Area);
+    Resultado_Area_Triangle.innerHTML = Area;
+};
