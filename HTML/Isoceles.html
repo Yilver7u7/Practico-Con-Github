@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isoceles</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Calculadora de Triángulo Isoceles</h1>
+        </header>
+        <section>
+            <form action="">
+                <div class="Figure-form-label">
+                    <label for="InputTriangle_lado1">
+                        <span>Escribe el valor de los tres lados</span>
+                    </label>
+                </div>
+                <div class="input-Tiangle">
+                    <input type="number" id="InputTriangle_lado1" placeholder="Lado">
+                    <input type="number" id="InputTriangle_lado2" placeholder="Lado">
+                    <input type="number" id="InputTriangle_Base" placeholder="Base">
+                </div>
+                <div>
+                    <button type="button" onclick="calcularIsoceles()" >Calcular la Altura</button>                
+                </div>
+                <div>
+                    <p id="Resultado_Altura-Isoceles"></p>
+                </div>
+                <div class="Imagen_Isoceles">
+                    <figure>
+                        <img src="/Isoceles.jpg" alt="Es una imagen de un un Triángulo Isoceles" />
+                    </figure>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="/Isoceles.js"></script>
+</body>
+<link rel="stylesheet" href="/CSS/Isoceles.css">
+</html>
