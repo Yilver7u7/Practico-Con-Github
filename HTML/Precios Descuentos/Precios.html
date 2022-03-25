@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento Tienda</title>
+</head>
+<body>
+    <header class="Header-C">
+        <h1 class="tittle-content_header"></h1>
+        <p class="text-content_header">Descuento En Compras</p>
+    </header>
+    <main class="Main-content">
+        <section class="Section_Content-Descuento">
+            <h2>Calcular el Precio con el Descuento incluido</h2>
+            <form action="">
+            <div>
+                <label for="Precio">
+                    <span>Calcular Descuento</span>
+                </label>
+            </div>
+            <div class="Input-Descuento">
+                <input type="number" id="input-Precio" placeholder="Precio $">
+                <input type="number" id="input-Descuento" placeholder="Descuento %">
+            </div>
+            <div class="content-Button">
+                <button type="button" onclick="calcularDescuento()">Calcular Descuento</button>
+            </div>
+            <div class="Respuesta">
+                <p id="decuentoTotal"></p>
+            </div>
+            </form>
+        </section>
+    </main>
+</body>
+<link rel="stylesheet" href="../../CSS/Precios Descuentos/Precios.css">
+<script src="../../Javascript/Precios Descuentos/Precios.js"></script>
+</html>
