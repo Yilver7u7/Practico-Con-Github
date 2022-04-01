@@ -11,6 +11,5 @@ function calcularDescuento(){
     let descuento = Number (Input2.value);
     //fuciones
     let resultado = Descuento(precio, descuento);
-    let Resultado = `${resultado} $`
-    decuentoTotal.innerHTML = Resultado;
+    decuentoTotal.innerHTML = `${resultado} $`;
 };
