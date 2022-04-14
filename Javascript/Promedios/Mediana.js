@@ -1,35 +1,41 @@
-const lista = [100,200,500,400000000]
+ function calcularMediana(){
+     let input = document.getElementById("input-Average");
+     let value = input.value;
+    let list=value.split(",");
 
-const mitadLista = parseInt(lista.length/2);
-let mediana;
+    const lista = list.sort(function (a,b) {
+        return a-b
+    });
 
-if (esPar(lista.length)) {
-    //Necesitamos 2 elementos que serán las posiciones
-    const Elemento1 = lista[mitadLista-1];
-    const Elemento2 = lista[mitadLista];
-    //Promedio de las posiciones
-    let promedioMediana = calcularMedia([Elemento1, Elemento2])
-    //Mediana
-    console.log(promedioMediana);
-}else{
-    mediana = lista[mitadLista];
-    console.log(mediana);
-};
+    const mitadLista = parseInt(lista.length/2);
+    let mediana;
 
-function esPar(numerito){
-    if (numerito%2 === 0) {
-        return true
+    if (esPar(lista.length)) {
+        //Necesitamos 2 elementos que serán las posiciones
+        let one = lista[mitadLista-1];
+        let dos = lista[mitadLista];
+        console.log(mitadLista);
+        //Promedio de las posiciones
+        let promedioMediana =  calcularMedia(Number (one), Number(dos));
+        //Mediana
+        console.log(promedioMediana);
+        Respuesta.innerHTML = promedioMediana;
     }else{
-        return false
-    }
-};
+        mediana = lista[mitadLista];
+        console.log(mediana);
+        Respuesta.innerHTML = mediana;
+    };
 
-function calcularMedia (lista){
-    let sumaLista = 0;
-     for (let i= 0; i < lista.length; i++){
-         sumaLista = sumaLista + lista[i];
-     };
-    const promedioLista = sumaLista/lista.length;
-     return promedioLista
-};
+    function esPar(numerito){
+        if (numerito%2 === 0) {
+            return true
+        }else{
+            return false
+        }
+    };
 
+    function calcularMedia (a,b){
+        let suma = a+b;
+        return suma/2;
+    };
+};
